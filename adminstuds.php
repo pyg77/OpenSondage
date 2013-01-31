@@ -210,7 +210,7 @@ if (isset($_POST["ajoutsujet"]) || isset($_POST["ajoutsujet_x"])) {
     echo '<select name="nouveaumois"> '."\n";
     echo '<OPTION VALUE="vide"></OPTION>'."\n";
     for($i = 1; $i < 13; $i++) {
-      echo '<OPTION VALUE="'.$i.'">'.strftime('%B', mktime(0, 0, 0, $i)).'</OPTION>'."\n";
+      echo '<OPTION VALUE="'.$i.'">'.strftime('%B', mktime(0, 0, 0, $i, 1)).'</OPTION>'."\n";
     }
     echo '</SELECT>'."\n";
 
